@@ -1,4 +1,4 @@
-import { FormEventHandler, useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal';
 import Title from './components/Title';
 import Graphic from './components/Graphic';
