@@ -1,24 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
+import { FormEventHandler, useState } from 'react';
+import Modal from 'react-modal';
+import Title from './components/Title';
+import Graphic from './components/Graphic';
+import Paragraph from './components/Paragraph';
+import Download from './components/Download';
 import './App.css';
 
+Modal.setAppElement('#root')
+
 function App() {
+
+  const [modalIsOpen, setIsOpen] = useState(false)
+  const [emailSubmitted, setIsSubmitted] = useState(false)
+
+
+
+  const handleEmailSubmission = (e: React.FormEvent) => {
+    e.preventDefault()
+    console.log(e.target)
+  }
+
+  const handleOpenModal = () => {
+    setIsOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsOpen(false)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Modal
+        isOpen={modalIsOpen}
+        id="modal"
+        onRequestClose={handleCloseModal}
+      >
+          <form onSubmit={handleEmailSubmission} id="email-modal">
+              <h2><i>Simply add your email to receive your Free PDF</i></h2>
+              <label htmlFor="email">Enter your email</label>
+              <input type="email" name="email" id="email" />
+              <input type="button" value="Submit" id="submit-btn"/>
+          </form>
+      </Modal>
+      <Title />
+      <Graphic />
+      <Paragraph />
+      <Download handleOpenModal={handleOpenModal}/>
     </div>
   );
 }

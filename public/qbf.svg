@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   width="71.273193mm"
+   height="27.726221mm"
+   viewBox="0 0 71.273193 27.726221"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="270.66483"
+       y="438.46417"
+       width="101.73912"
+       height="95.81414"
+       id="rect7156" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-37.762889,-113.28866)">
+    <g
+       id="g20232">
+      <ellipse
+         style="fill:#008080;stroke-width:0.264583"
+         id="path156"
+         cx="51.03093"
+         cy="125.87629"
+         rx="13.268041"
+         ry="12.587628" />
+      <rect
+         style="fill:#008080;stroke-width:0.264583"
+         id="rect202"
+         width="20.072166"
+         height="6.4639177"
+         x="127.13766"
+         y="37.642075"
+         transform="rotate(50.483721)"
+         ry="3.0641522" />
+      <ellipse
+         style="fill:#999999;stroke-width:0.383084"
+         id="path330"
+         cx="51.158508"
+         cy="125.76997"
+         rx="4.4652061"
+         ry="4.4014177" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.44251191,0,0,0.54672638,-52.833823,-136.66533)"
+         id="text7154"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:74.6667px;line-height:1.35;font-family:'Tamil MN';-inkscape-font-specification:'Tamil MN Bold';white-space:pre;shape-inside:url(#rect7156);fill:#008080;fill-opacity:1;stroke:none"><tspan
+           x="270.66406"
+           y="507.89613"
+           id="tspan20344">B</tspan></text>
+      <rect
+         style="fill:#008080;stroke-width:0.264583"
+         id="rect19502"
+         width="5.783505"
+         height="26.025772"
+         x="93.046394"
+         y="114.30927"
+         ry="2.8917525" />
+      <rect
+         style="fill:#008080;stroke-width:0.273454"
+         id="rect19504"
+         width="15.98969"
+         height="5.1030927"
+         x="93.046394"
+         y="114.30927" />
+      <rect
+         style="fill:#008080;stroke-width:0.264583"
+         id="rect19608"
+         width="12.077319"
+         height="4.5927835"
+         x="95.257736"
+         y="124.51546" />
+    </g>
+  </g>
+</svg>
