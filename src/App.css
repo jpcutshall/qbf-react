@@ -11,8 +11,10 @@ body, html {
   background: peachpuff;
   background-size: auto;
   
-  
-  
+}
+
+input {
+  font-size: larger;
 }
 
 h1 {
@@ -48,10 +50,9 @@ h1 {
 }
 
 #paragraph {
-  margin: 0 100px 50px 100px;
+  margin: 10px 100px 45px 100px;
   width: 45%;
   color: black;
-  padding: 10px;
   border-radius: 10px;
   font-size: 1.3em;
   text-indent: .5in;
@@ -212,6 +213,20 @@ h1 {
     text-align: center;
   }
 
+  #modal {
+    padding: 10px;
+    max-width: 90%;
+    max-height: 80%;
+  }
+
+  #paragraph {
+    text-indent: 0;
+  }
+
+  #submit-btn {
+    font-size: larger;
+  }
+
   #about {
     flex-direction: column;
     justify-items: center;
@@ -232,7 +247,7 @@ h1 {
   #about-text p {
     margin-right: 8px;
     text-align: center;
-    text-indent: .15in;
+    text-indent: 0;
   }
 
   #book-img {
