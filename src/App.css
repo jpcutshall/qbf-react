@@ -13,6 +13,11 @@ body, html {
   
 }
 
+a {
+  color: #ff7d08;
+  text-decoration: none;
+}
+
 input {
   font-size: larger;
 }
