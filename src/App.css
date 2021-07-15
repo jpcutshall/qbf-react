@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .App {
   display: flex;
@@ -79,6 +79,7 @@ h1 {
   max-height: 50%;
   overflow: hidden;
   margin: auto;
+  background: peachpuff !important;
   box-shadow: 10px 5px 5px gray;
 }
 
@@ -92,9 +93,9 @@ h1 {
 }
 
 #submit-btn {
-  margin-top: 10%;
+  margin-top: 15px;
   padding: 15px;
-  color: #FFFFFF;
+  color: black;
   background-color: #b9deff;
   border-color: #b9deff;
   border-radius: 5px;
@@ -156,6 +157,10 @@ h1 {
   font-size: smaller;
 }
 
+#download {
+  margin-top: 15px;
+}
+
 #horz {
   width: 900px;
   margin-top: 45px;
@@ -196,11 +201,15 @@ h1 {
     width: 80%;
   }
 
+  #btn {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 22px;
+  
+  body{
+    text-align: center;
   }
 
   #about {
@@ -222,10 +231,18 @@ h1 {
 
   #about-text p {
     margin-right: 8px;
+    text-align: center;
+    text-indent: .15in;
   }
 
   #book-img {
     width: 85%;
   }
 
+}
+
+@media only screen and (max-width: 400px) {
+  #btn {
+    font-size: 21px;
+  }
 }
