@@ -9,7 +9,8 @@ const Graphic = (props: Props) => {
         <a id="img" href="/#">
             <img 
                 alt="says QBF for Quality Book Formula" 
-                src="boxes.svg" 
+                src="pickawood.jpg" 
+                id="book-img"
             />
         </a>
       

@@ -4,6 +4,8 @@ import Title from './components/Title';
 import Graphic from './components/Graphic';
 import Paragraph from './components/Paragraph';
 import Download from './components/Download';
+import WhoAmI from './components/WhoAmI';
+import Horz from './components/Horz';
 import './App.css';
 
 Modal.setAppElement('#root')
@@ -13,6 +15,7 @@ function App() {
   const [modalIsOpen, setIsOpen] = useState(false)
   const [emailSubmitted, setIsSubmitted] = useState(false)
   const [hiddenField, setHiddenField] = useState("")
+  const [hiddenGroup, setHiddenGroup] = useState(1)
 
   const handleHiddenChange = (event: any) => {
     console.log(event)
@@ -20,7 +23,7 @@ function App() {
   }
 
   const handleEmailSubmission = (e: any) => {
-    e.preventDefault()
+    //e.preventDefault()
     setIsSubmitted(true)
     console.log(e.target.email.value)
   }
@@ -53,8 +56,15 @@ function App() {
             </div>   {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
 
             <div id="hidden" aria-hidden="true">
+              <input type="checkbox" name="group[29862][1]" onChange={(e: any) => setHiddenGroup(e.target.value)} value={hiddenGroup} checked/>
               <input type="text" name="b_7dc72c2e40adfa2d99a20d216_44b681c1ed" tabIndex={-1} onChange={handleHiddenChange} value={hiddenField} />
             </div>
+
+            {emailSubmitted ? 
+              <a id="download" href="Qualilty-Book-Formula_Checklist.pdf" download>Download</a> 
+              :
+              null
+            }
 
             <input type="submit" value="Subscribe" name="subscribe" id="submit-btn" className="submit-btn"/>
            
@@ -65,6 +75,8 @@ function App() {
       <Graphic />
       <Paragraph />
       <Download handleOpenModal={handleOpenModal}/>
+      <Horz />
+      <WhoAmI />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 body, html {
   height: 100%;
   padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .App {
   display: flex;
@@ -25,16 +26,25 @@ h1 {
 
 #img {
   margin: 30px;
+  border-radius: 5px;
   transition: all .3s ease-in-out;
+}
+
+#book-img{
+  width: 455px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: contain;
+  box-shadow: 3px 2px 2px gray;
 }
 
 #img:hover {
   transform: scale(1.1) perspective(1px);
 }
 
-p {
-  margin: 100px;
-  max-width: 30%;
+#paragraph {
+  margin: 0 100px 75px 100px;
+  width: 45%;
   color: #008080;
   padding: 10px;;
   background-color: rgba( 255, 255, 255, 0.9);
@@ -92,6 +102,71 @@ p {
   cursor: pointer;
 }
 
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(205, 255, 253);
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px gray;
+  max-width: 40%;
+}
+
+#about-text p {
+  margin: 10px 12px 20px 12px;
+  text-indent: .3in;
+}
+
+#about-text h2 {
+  margin-bottom: 0;
+  margin-right: 60%;
+  letter-spacing: 1px;
+}
+
+
+#about-img {
+  background-color: rgb(205, 255, 253);
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px gray;
+  padding: 3px 3px 0 3px;
+  margin-right: 10px;
+}
+#about-img img {
+  border-radius: 3px;
+}
+
+#about-img figcaption {
+  text-align: center;
+}
+
+#img-text {
+  font-size: smaller;
+}
+
+#horz {
+  width: 900px;
+  margin-top: 1.3%;
+  border-top: 1px solid gray;
+}
+
 #hidden {
   display: none;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
 }
