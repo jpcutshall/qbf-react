@@ -11,7 +11,7 @@ const WhoAmI = (props: Props) => {
                 <figcaption id="img-text">Brigitte Cutshall</figcaption>
             </figure>
             <div id="about-text">
-                <h2>Who am I?</h2>
+                <h2><i>Who am I?</i></h2>
                 <p>
                     Hi there! My name is Brigitte and I’m a Media Solutions & Production Expert, Author, and Founder of Gemini Media.
                 </p>

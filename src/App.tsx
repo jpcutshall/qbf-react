@@ -7,6 +7,7 @@ import Download from './components/Download';
 import WhoAmI from './components/WhoAmI';
 import Horz from './components/Horz';
 import './App.css';
+import Footer from './components/Footer';
 
 Modal.setAppElement('#root')
 
@@ -77,6 +78,7 @@ function App() {
       <Download handleOpenModal={handleOpenModal}/>
       <Horz />
       <WhoAmI />
+      <Footer />
     </div>
   );
 }
