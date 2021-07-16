@@ -48,6 +48,8 @@ function App() {
         >
           
             <form action="https://brigittecutshall.us11.list-manage.com/subscribe/post?u=7dc72c2e40adfa2d99a20d216&amp;id=44b681c1ed" method="post" id="email-modal" name="subscribe-form" className="validate email-modal" target="_blank" onSubmit={handleEmailSubmission} >
+
+              <button id="close" onClick={handleCloseModal}>Exit</button>
             
               <h2><i>Enter your Email to receive your free copy of the Quality Book Formula Checklist PDF</i></h2>
               
@@ -79,7 +81,7 @@ function App() {
               <input type="submit" value="Subscribe" name="subscribe" id="submit-btn" className="submit-btn"/>
 
               <small id="never-share">We will never share your email.</small>
-            
+                          
             </form>
 
         </Modal>
