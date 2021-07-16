@@ -75,7 +75,6 @@ h1 {
   color: black;
   border-radius: 10px;
   font-size: 1.3em;
-  text-indent: .5in;
 }
 
 #btn {
@@ -258,10 +257,6 @@ input {
     max-height: 80%;
   }
 
-  #paragraph {
-    text-indent: 0;
-  }
-
   #submit-btn {
     font-size: larger;
   }
@@ -297,6 +292,6 @@ input {
 
 @media only screen and (max-width: 400px) {
   #btn {
-    font-size: 21px;
+    font-size: 18px;
   }
 }

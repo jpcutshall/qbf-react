@@ -7,7 +7,7 @@ interface Props {
 const Download = ({ handleOpenModal }: Props) => {
     return (
         <button id="btn" onClick={handleOpenModal}>
-            Download Your Free PDF
+            Download Your Free Checklist
         </button>
     )
 }
