@@ -29,8 +29,8 @@ body, html {
 }
 
 a {
-  color: #ff7d08;
-  text-decoration: none;
+  color: #000f1c;
+  text-decoration: underline double;
 }
 
 input {
