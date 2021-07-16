@@ -49,7 +49,7 @@ function App() {
           
             <form action="https://brigittecutshall.us11.list-manage.com/subscribe/post?u=7dc72c2e40adfa2d99a20d216&amp;id=44b681c1ed" method="post" id="email-modal" name="subscribe-form" className="validate email-modal" target="_blank" onSubmit={handleEmailSubmission} >
             
-              <h2><i>Enter your Email to receive your free copy of the Quality Book Formula Checklist</i></h2>
+              <h2><i>Enter your Email to receive your free copy of the Quality Book Formula Checklist PDF</i></h2>
               
               <label htmlFor="email">Email Address </label>
               <input type="email" placeholder="Enter your Email here" name="EMAIL" className="required email" id="email" />
@@ -65,12 +65,20 @@ function App() {
               </div>
 
               {emailSubmitted ? 
+                <small id="confirm-email">Please Confirm your Email address to subscribe!</small> 
+                :
+                null
+              }
+
+              {emailSubmitted ? 
                 <a id="download" href="Qualilty-Book-Formula_Checklist.pdf" download>Download</a> 
                 :
                 null
               }
 
               <input type="submit" value="Subscribe" name="subscribe" id="submit-btn" className="submit-btn"/>
+
+              <small id="never-share">We will never share your email.</small>
             
             </form>
 

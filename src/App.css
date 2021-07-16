@@ -101,6 +101,7 @@ h1 {
   max-height: 50%;
   overflow: hidden;
   margin: auto;
+  border-radius: 7px !important;
   background: peachpuff !important;
   box-shadow: 10px 5px 5px gray;
 }
@@ -112,6 +113,10 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+
+input {
+  padding: 3px 3px;
 }
 
 #submit-btn {
@@ -186,6 +191,14 @@ h1 {
   width: 100%;
   background: #b9deff;
   text-align: center;
+}
+
+#never-share {
+  margin-top: 10px;
+}
+
+#confirm-email {
+  margin-top: 10px;
 }
 
 #horz {
