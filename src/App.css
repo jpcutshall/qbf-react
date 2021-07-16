@@ -61,11 +61,11 @@ h1 {
   border-radius: 5px;
   object-fit: contain;
   box-shadow: 3px 2px 2px gray;
-  transition: all .3s ease-in-out;
+  
 }
 
 #book-img:hover {
-  transform: scale(1.05) perspective(1px);
+ 
   cursor: pointer;
 }
 
