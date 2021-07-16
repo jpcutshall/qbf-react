@@ -7,7 +7,7 @@ const WhoAmI = (props: Props) => {
     return (
         <div id="about">
             <figure id="about-img">
-                <img src="BCHeadshot.jpg" alt="Brigitte Cutshall wearing a shirt that says The Book Was Better" />
+                <img width="150" height="150" src="BCHeadshot.jpg" alt="Brigitte Cutshall wearing a shirt that says The Book Was Better" />
                 <figcaption id="img-text">Brigitte Cutshall</figcaption>
             </figure>
             <div id="about-text">

@@ -9,7 +9,7 @@ const Graphic = (props: Props) => {
         <a id="img" href="/#">
             <img 
                 alt="says QBF for Quality Book Formula" 
-                src="pickawood.jpg" 
+                src="pickawoodCompRes.jpg" 
                 id="book-img"
             />
         </a>
