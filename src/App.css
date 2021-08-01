@@ -251,6 +251,10 @@ input {
     width: 75%;
   }
 
+  #modal {
+    height: 80%;
+  }
+
   #horz {
     width: 80%;
   }
@@ -269,7 +273,7 @@ input {
   #modal {
     padding: 10px;
     max-width: 90%;
-    max-height: 80%;
+    height: 80%;
   }
 
   #submit-btn {
