@@ -97,7 +97,7 @@ h1 {
   align-items: center;
   padding: 15px;
   max-width: 35%;
-  max-height: fit-content;
+  height: 50%;
   overflow: hidden;
   margin: auto;
   border-radius: 7px !important;
@@ -111,7 +111,6 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
 input {
