@@ -30,7 +30,11 @@ body, html {
 
 a {
   color: #000f1c;
-  text-decoration: underline double;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #3498db;
 }
 
 input {
