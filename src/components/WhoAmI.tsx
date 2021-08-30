@@ -18,7 +18,8 @@ const WhoAmI = (props: Props) => {
                 </a></i></h2>
 
                 <p>
-                    Hi there! My name is Brigitte and I’m a Media Solutions & Production Expert, Author, and Founder of <a href="http://www.geminimediainc.com/" target="_blank" rel="noreferrer">Gemini Media</a>.
+                    Hi there! My name is Brigitte and I’m a Media Solutions & Production Expert, Author, Founder of <a href="http://www.geminimediainc.com/" target="_blank" rel="noreferrer">Gemini Media</a>,
+                    and host of the <a href="https://brigittecutshall.com/podcast/" target="_blank" rel="noreferrer">Real Things Living</a> Podcast.
                 </p>
                 <p>
                     For the past 25+ years, I’ve been helping content creators with production solutions in the business of books.
