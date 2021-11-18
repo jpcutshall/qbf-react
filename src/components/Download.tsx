@@ -1,15 +1,13 @@
-
-
 interface Props {
-    handleOpenModal: () => void
+	handleOpenModal: () => void;
 }
 
 const Download = ({ handleOpenModal }: Props) => {
-    return (
-        <button id="btn" onClick={handleOpenModal}>
-            Download Your Free Checklist
-        </button>
-    )
-}
+	return (
+		<button className="btn" onClick={handleOpenModal}>
+			Download Your Free Checklist
+		</button>
+	);
+};
 
-export default Download
+export default Download;
