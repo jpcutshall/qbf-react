@@ -142,8 +142,7 @@ function App() {
 						professionally publish your book for excellence!
 					</h2>
 					<iframe
-						width="560"
-						height="315"
+						className="video__iframe"
 						src="https://www.youtube-nocookie.com/embed/QadPY7gFpQY"
 						title="YouTube video player"
 						frameBorder="0"
