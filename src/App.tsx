@@ -37,23 +37,23 @@ function App() {
 		setIsOpen(false);
 	};
 	return (
-		<div className="App">
+		<div className='App'>
 			<Suspense fallback={<Loader />}>
 				<Modal
 					isOpen={modalIsOpen}
-					id="modal"
+					id='modal'
 					onRequestClose={handleCloseModal}
 				>
 					<form
-						action="https://brigittecutshall.us11.list-manage.com/subscribe/post?u=7dc72c2e40adfa2d99a20d216&amp;id=44b681c1ed"
-						method="post"
-						id="email-modal"
-						name="subscribe-form"
-						className="validate email-modal"
-						target="_blank"
+						action='https://brigittecutshall.us11.list-manage.com/subscribe/post?u=7dc72c2e40adfa2d99a20d216&amp;id=44b681c1ed'
+						method='post'
+						id='email-modal'
+						name='subscribe-form'
+						className='validate email-modal'
+						target='_blank'
 						onSubmit={handleEmailSubmission}
 					>
-						<button id="close" onClick={handleCloseModal}>
+						<button id='close' onClick={handleCloseModal}>
 							Exit
 						</button>
 						<h2>
@@ -62,29 +62,29 @@ function App() {
 								the Quality Book Formula Checklist PDF
 							</i>
 						</h2>
-						<label htmlFor="email">Email Address </label>
+						<label htmlFor='email'>Email Address </label>
 						<input
-							type="email"
-							placeholder="Enter your Email here"
-							name="EMAIL"
-							className="required email"
-							id="email"
+							type='email'
+							placeholder='Enter your Email here'
+							name='EMAIL'
+							className='required email'
+							id='email'
 						/>
-						<div id="mce-responses" className="clear">
+						<div id='mce-responses' className='clear'>
 							<div
-								className="response"
-								id="mce-error-response"
+								className='response'
+								id='mce-error-response'
 							></div>
 							<div
-								className="response"
-								id="mce-success-response"
+								className='response'
+								id='mce-success-response'
 							></div>
 						</div>{" "}
 						{/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-						<div id="hidden" aria-hidden="true">
+						<div id='hidden' aria-hidden='true'>
 							<input
-								type="checkbox"
-								name="group[29862][1]"
+								type='checkbox'
+								name='group[29862][1]'
 								onChange={(e: any) =>
 									setHiddenGroup(e.target.value)
 								}
@@ -92,35 +92,35 @@ function App() {
 								checked
 							/>
 							<input
-								type="text"
-								name="b_7dc72c2e40adfa2d99a20d216_44b681c1ed"
+								type='text'
+								name='b_7dc72c2e40adfa2d99a20d216_44b681c1ed'
 								tabIndex={-1}
 								onChange={handleHiddenChange}
 								value={hiddenField}
 							/>
 						</div>
 						{emailSubmitted ? (
-							<small id="confirm-email">
+							<small id='confirm-email'>
 								Please Confirm your Email address to subscribe!
 							</small>
 						) : null}
 						{emailSubmitted ? (
 							<a
-								id="download"
-								href="Qualilty-Book-Formula_Checklist.pdf"
+								id='download'
+								href='Qualilty-Book-Formula_Checklist.pdf'
 								download
 							>
 								Download
 							</a>
 						) : null}
 						<input
-							type="submit"
-							value="Subscribe"
-							name="subscribe"
-							id="submit-btn"
-							className="submit-btn"
+							type='submit'
+							value='Subscribe'
+							name='subscribe'
+							id='submit-btn'
+							className='submit-btn'
 						/>
-						<small id="never-share">
+						<small id='never-share'>
 							We will never share your email.
 						</small>
 					</form>
@@ -129,26 +129,36 @@ function App() {
 				<Download handleOpenModal={handleOpenModal} />
 				<Graphic />
 				<a
-					href="https://www.amazon.com/dp/B09LVSD7C5/ref=cm_sw_r_sms_api_glt_H70FJFDHXV4JS4JP91YR"
-					target="_blank"
-					rel="noreferrer"
+					href='https://www.amazon.com/dp/B09LVSD7C5/ref=cm_sw_r_sms_api_glt_H70FJFDHXV4JS4JP91YR'
+					target='_blank'
+					rel='noreferrer'
 				>
-					<button className="btn">Buy the eBook</button>
+					<button className='btn'>Buy the eBook</button>
 				</a>
 				<Paragraph />
-				<div className="video">
+				<div className='video'>
 					<h2>
 						Here are some videos to provide more guidance on how to
 						professionally publish your book for excellence!
 					</h2>
-					<iframe
-						className="video__iframe"
-						src="https://www.youtube-nocookie.com/embed/QadPY7gFpQY"
-						title="YouTube video player"
-						frameBorder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowFullScreen
-					></iframe>
+					<div className='vids_container'>
+						<iframe
+							className='video__iframe'
+							src='https://www.youtube-nocookie.com/embed/QadPY7gFpQY'
+							title='YouTube video player'
+							frameBorder='0'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+							allowFullScreen
+						></iframe>
+						<iframe
+							className='video__iframe'
+							src='https://www.youtube-nocookie.com/embed/J4oscROI3EE'
+							title='YouTube video player'
+							frameBorder='0'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+							allowFullScreen
+						></iframe>
+					</div>
 				</div>
 				<Horz />
 				<WhoAmI />

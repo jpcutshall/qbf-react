@@ -30,9 +30,17 @@ html {
 	text-align: center;
 }
 
+.vids_container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
 .video__iframe {
 	width: 30rem;
 	height: 18rem;
+	margin: 5px 10px;
 }
 
 @keyframes spin {
