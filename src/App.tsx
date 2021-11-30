@@ -129,11 +129,11 @@ function App() {
 				<Download handleOpenModal={handleOpenModal} />
 				<Graphic />
 				<a
-					href='https://www.amazon.com/dp/B09LVSD7C5/ref=cm_sw_r_sms_api_glt_H70FJFDHXV4JS4JP91YR'
+					href='https://www.amazon.com/dp/0978747585/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='
 					target='_blank'
 					rel='noreferrer'
 				>
-					<button className='btn'>Buy the eBook</button>
+					<button className='btn'>Buy the Book</button>
 				</a>
 				<Paragraph />
 				<div className='video'>
