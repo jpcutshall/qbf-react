@@ -8,6 +8,7 @@ import WhoAmI from "./components/WhoAmI";
 import Horz from "./components/Horz";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
+import WhoIsThisFor from "./components/WhoIsThisFor";
 const Graphic = lazy(() => import("./components/Graphic"));
 
 Modal.setAppElement("#root");
@@ -39,11 +40,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Suspense fallback={<Loader />}>
-				<Modal
-					isOpen={modalIsOpen}
-					id='modal'
-					onRequestClose={handleCloseModal}
-				>
+				<Modal isOpen={modalIsOpen} id='modal' onRequestClose={handleCloseModal}>
 					<form
 						action='https://brigittecutshall.us11.list-manage.com/subscribe/post?u=7dc72c2e40adfa2d99a20d216&amp;id=44b681c1ed'
 						method='post'
@@ -57,10 +54,7 @@ function App() {
 							Exit
 						</button>
 						<h2>
-							<i>
-								Enter your Email to receive your free copy of
-								the Quality Book Formula Checklist PDF
-							</i>
+							<i>Enter your Email to receive your free copy of the Quality Book Formula Checklist PDF</i>
 						</h2>
 						<label htmlFor='email'>Email Address </label>
 						<input
@@ -71,23 +65,15 @@ function App() {
 							id='email'
 						/>
 						<div id='mce-responses' className='clear'>
-							<div
-								className='response'
-								id='mce-error-response'
-							></div>
-							<div
-								className='response'
-								id='mce-success-response'
-							></div>
+							<div className='response' id='mce-error-response'></div>
+							<div className='response' id='mce-success-response'></div>
 						</div>{" "}
 						{/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
 						<div id='hidden' aria-hidden='true'>
 							<input
 								type='checkbox'
 								name='group[29862][1]'
-								onChange={(e: any) =>
-									setHiddenGroup(e.target.value)
-								}
+								onChange={(e: any) => setHiddenGroup(e.target.value)}
 								value={hiddenGroup}
 								checked
 							/>
@@ -100,16 +86,10 @@ function App() {
 							/>
 						</div>
 						{emailSubmitted ? (
-							<small id='confirm-email'>
-								Please Confirm your Email address to subscribe!
-							</small>
+							<small id='confirm-email'>Please Confirm your Email address to subscribe!</small>
 						) : null}
 						{emailSubmitted ? (
-							<a
-								id='download'
-								href='Qualilty-Book-Formula_Checklist.pdf'
-								download
-							>
+							<a id='download' href='Qualilty-Book-Formula_Checklist.pdf' download>
 								Download
 							</a>
 						) : null}
@@ -120,26 +100,34 @@ function App() {
 							id='submit-btn'
 							className='submit-btn'
 						/>
-						<small id='never-share'>
-							We will never share your email.
-						</small>
+						<small id='never-share'>We will never share your email.</small>
 					</form>
 				</Modal>
 				<Title />
-				<Download handleOpenModal={handleOpenModal} />
-				<Graphic />
-				<a
-					href='https://www.amazon.com/dp/0978747585/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='
-					target='_blank'
-					rel='noreferrer'
-				>
-					<button className='btn'>Buy the Book</button>
-				</a>
-				<Paragraph />
+				<div className='image-btns-paragraph'>
+					<div className='sub-container'>
+						<div className='btns-paragraph'>
+							<div className='btns-container'>
+								<a
+									href='https://www.amazon.com/dp/0978747585/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='
+									target='_blank'
+									rel='noreferrer'
+								>
+									<button className='btn'>Buy the Book</button>
+								</a>
+								<Download handleOpenModal={handleOpenModal} />
+							</div>
+							<Paragraph />
+						</div>
+						<Graphic />
+					</div>
+				</div>
+				<WhoIsThisFor />
+				{/* <Paragraph /> */}
 				<div className='video'>
-					<h2>
-						Here are some videos to provide more guidance on how to
-						professionally publish your book for excellence!
+					<h2 className='video-title'>
+						Here are some videos to provide more guidance on how to professionally publish your book for
+						excellence!
 					</h2>
 					<div className='vids_container'>
 						<iframe
