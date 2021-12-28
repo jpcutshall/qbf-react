@@ -6,8 +6,8 @@ const Title = (props: Props) => {
 			<h1>Producing a Quality Book</h1>
 			<h2>
 				<p className='title-p'>
-					&nbsp; What are the steps between your idea & selling it? Learn the process & tools you need to
-					overcome writer's block to get your book finished.
+					&nbsp; What are the steps between your idea & selling it? Learn the process & tools you need to get
+					your book finished.
 				</p>
 			</h2>
 			<h2>
