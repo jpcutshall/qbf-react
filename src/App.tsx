@@ -103,23 +103,25 @@ function App() {
 						<small id='never-share'>We will never share your email.</small>
 					</form>
 				</Modal>
-				<Title />
-				<div className='image-btns-paragraph'>
-					<div className='sub-container'>
-						<div className='btns-paragraph'>
-							<div className='btns-container'>
-								<a
-									href='https://www.amazon.com/dp/0978747585/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='
-									target='_blank'
-									rel='noreferrer'
-								>
-									<button className='btn'>Buy the Book</button>
-								</a>
-								<Download handleOpenModal={handleOpenModal} />
+				<div className='gradient-div'>
+					<Title />
+					<div className='image-btns-paragraph'>
+						<div className='sub-container'>
+							<div className='btns-paragraph'>
+								<div className='btns-container'>
+									<a
+										href='https://www.amazon.com/dp/0978747585/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='
+										target='_blank'
+										rel='noreferrer'
+									>
+										<button className='btn'>Buy the Book</button>
+									</a>
+									<Download handleOpenModal={handleOpenModal} />
+								</div>
+								<Paragraph />
 							</div>
-							<Paragraph />
+							<Graphic />
 						</div>
-						<Graphic />
 					</div>
 				</div>
 				<WhoIsThisFor />
@@ -141,6 +143,14 @@ function App() {
 						<iframe
 							className='video__iframe'
 							src='https://www.youtube-nocookie.com/embed/J4oscROI3EE'
+							title='YouTube video player'
+							frameBorder='0'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+							allowFullScreen
+						></iframe>
+						<iframe
+							className='video__iframe'
+							src='https://www.youtube.com/embed/UucgBdxBr1A'
 							title='YouTube video player'
 							frameBorder='0'
 							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
