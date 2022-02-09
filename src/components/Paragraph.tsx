@@ -9,8 +9,8 @@ const Paragraph = (props: Props) => {
 				chosen to publish and distribute.
 			</p> */}
 			<p>
-				&emsp; The Quality Book Formula Checklist was created to help you be aware of the design, production
-				process, and overall time lines. Follow my checklist to create the book of your dreams. From my personal
+				&emsp; The <i>Quality Book Formula</i> was created to help you be aware of the design, production
+				process, and overall timelines. Follow my checklist to create the book of your dreams. From my personal
 				experience as a writer and publisher. I can't promise your book will be perfect, that is on you! But it
 				will be a quality book created by you!
 			</p>
