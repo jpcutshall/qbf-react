@@ -212,7 +212,7 @@ input {
 	justify-content: center;
 	align-items: center;
 	text-align: left;
-	background-color: #b9deff;
+	background-color: #fff;
 	border-radius: 3px;
 	box-shadow: 3px 3px 3px gray;
 	max-width: 50%;
@@ -229,7 +229,7 @@ input {
 }
 
 #about-img {
-	background-color: #b9deff;
+	background-color: #fff;
 	border-radius: 3px;
 	box-shadow: 3px 3px 3px gray;
 	padding: 3px 3px 0 3px;
@@ -253,7 +253,7 @@ input {
 
 #foot {
 	width: 100%;
-	background: #b9deff;
+	background: #fff;
 	text-align: center;
 }
 
